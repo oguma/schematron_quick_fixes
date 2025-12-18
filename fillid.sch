@@ -13,7 +13,7 @@
     
     <sch:pattern>
         <sch:rule context="*/@id">
-            <sch:assert test="not(.='')" sqf:fix="fillid" role="warn">@id must be filled.</sch:assert>
+            <sch:assert test="not(.='')" sqf:fix="fillid" sqf:default-fix="fillid" role="warn">@id must be filled.</sch:assert>
             <sqf:fix id="fillid">
                 <sqf:description>
                     <sqf:title>Fill the @id</sqf:title>
